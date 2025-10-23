@@ -1,4 +1,4 @@
-Interactive Edge Detection Visualizer
+🧠 Interactive Edge Detection Visualizer
 
 Project Description
 
@@ -25,45 +25,41 @@ Open your terminal or command prompt in the directory where you saved the file.
 
 Execute the application using the Streamlit CLI:
 
-streamlit run main.py
+streamlit run edge_detector_app.py
 
 
 The application will automatically open in your default web browser.
 
-Key Features
+Core Features and Enhancements
 
-Feature
+These points highlight the main capabilities and recent improvements for easy review (e.g., in a Git commit summary):
 
-Description
+Three Edge Algorithms: Supports Canny (optimal), Sobel (gradient), and Laplacian (second derivative) methods.
 
-Three Algorithms
+Optimized Performance: Uses the @st.cache_data decorator to prevent unnecessary reprocessing, ensuring smooth slider adjustments.
 
-Supports Canny (optimal edge detection), Sobel (gradient), and Laplacian (second derivative).
+Responsive and Modern UI: Features Custom CSS styling for a professional, high-contrast look, including a soft off-white background and a distinct sidebar.
 
-Responsive UI
+Intuitive Controls: Parameters are organized using Expander sections to reduce clutter, showing only the relevant options for the selected algorithm.
 
-Custom CSS styling provides a modern, high-contrast, off-white interface with a distinct sidebar.
+Single-Slider Thresholds: Canny edge detection parameters are simplified using a single range slider for combined control of lower and upper thresholds.
 
-Optimized Performance
+Dynamic Metrics: Key parameter values (like Canny's Upper Threshold or Sobel's Kernel Size) are displayed in the sidebar using st.metric widgets for quick reference.
 
-Uses the @st.cache_data decorator to prevent the image decoding and core processing from running unnecessarily, ensuring smooth slider adjustments.
+Application Interface Summary
 
-Interactive Controls
+The interface is clearly separated into two functional areas:
 
-Parameters are grouped into intuitive Expander sections. Canny thresholds are simplified into a single range slider.
+1. Parameter Adjustment UI (Sidebar)
 
-Dynamic Metrics
+Controls are efficiently organized within the dedicated sidebar.
 
-Key parameters (like Canny's Upper Threshold or Sobel's Kernel Size) are displayed prominently in the sidebar using st.metric widgets.
+Algorithm-specific parameters are hidden/shown via Expander sections.
 
-Application Interface and Outputs
+A dynamic metric displays the active value of a key parameter when an algorithm is selected.
 
-The interface is divided into a control panel (sidebar) and the main visualization area.
+2. Side-by-Side Visualization (Main Area)
 
-1. Parameter Adjustment UI
+The main area clearly displays the Original Image next to the Edge-Detected Output.
 
-The controls are organized within a dedicated sidebar. When an algorithm is selected, its parameters are displayed in an expanded section, along with a dynamic metric showing a key value.
-
-2. Side-by-Side Visualization
-
-The main application area displays the results in a clear, contrasting side-by-side format within a dedicated container.
+Results are visually framed within a dedicated container with a high-contrast header.
