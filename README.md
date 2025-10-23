@@ -36,7 +36,7 @@ The application will automatically open in your default web browser.
 
 Core Features and Enhancements
 
-These points highlight the main capabilities and recent improvements for easy review (e.g., in a Git commit summary):
+These points highlight the main capabilities and recent improvements for easy review.
 
 Three Edge Algorithms: Supports Canny (optimal), Sobel (gradient), and Laplacian (second derivative) methods.
 
@@ -62,7 +62,7 @@ Algorithm-specific parameters are hidden/shown via Expander sections.
 
 A dynamic metric displays the active value of a key parameter when an algorithm is selected.
 
-2. Side-by-Side Visualization (Main Area)
+2. Side-by-Side Visualization.
 
 The main area clearly displays the Original Image next to the Edge-Detected Output.
 
