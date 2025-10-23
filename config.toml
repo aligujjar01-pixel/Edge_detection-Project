@@ -1,0 +1,15 @@
+[theme]
+# Soft sky-blue background
+backgroundColor = "#B0C7E6"
+
+# Slightly darker panels (sidebar, widgets, etc.)
+secondaryBackgroundColor = "#9AB4D4"
+
+# Modern deep blue for buttons/sliders
+primaryColor = "#3A5BA0"
+
+# Dark text for good readability
+textColor = "#1E2A38"
+
+# Clean, professional font
+font = "sans serif"
