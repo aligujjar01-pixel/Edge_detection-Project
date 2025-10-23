@@ -19,13 +19,17 @@ pip install opencv-python numpy streamlit
 
 How to Run the Application
 
-Save the Python code provided above as edge_detector_app.py.
+create the folder withe name .streamlit and keep the config.toml file inside and then run the command given below.
+
+.streamlit/config.toml // this how path should look.
+
+Save the Python code provided above as main.py.
 
 Open your terminal or command prompt in the directory where you saved the file.
 
 Execute the application using the Streamlit CLI:
 
-streamlit run edge_detector_app.py
+streamlit run main.py
 
 
 The application will automatically open in your default web browser.
